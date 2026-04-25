@@ -14,7 +14,7 @@ const app = express();
 const dotenv = require('dotenv');
 dotenv.config();
 const port = process.env.PORT;
-mongoose.connect(process.env.MONGODB_URI)
+mongoose.connect(process.env.MONGODB_URI)// MongoDB Connection
 .then(()=>{
     console.log("DB Connect ");
 })
@@ -23,7 +23,7 @@ mongoose.connect(process.env.MONGODB_URI)
 })
 
 
-// MongoDB Connection
+
 
 
 // Middleware

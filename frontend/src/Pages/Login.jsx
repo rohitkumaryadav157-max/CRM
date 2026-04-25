@@ -20,7 +20,7 @@ function Login()  {
 
     const user ={email,password};
 
-    const response = await axios.post('http://localhost:3000/api/admin/log',user);
+    const response = await axios.post('https://crm-f6p9.onrender.com/api/admin/log',user);
     if(response.data.msg=="success"){
         toast.success('Login Success🎉🎉')
         // window.alert("Login Success🎉🎉");
