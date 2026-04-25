@@ -1,0 +1,134 @@
+/* Page Background */
+.login-wrapper {
+    background-color: #fff5ed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Central Login Card */
+.login-card {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+    border-top: 5px solid #f6821f; /* Orange top border */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    padding: 30px 25px;
+    text-align: center;
+}
+
+/* Logo Styling */
+.logo-container {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #f6821f;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.logo-container img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.crm-text {
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+/* Text Styling */
+.welcome-text {
+    color: #f6821f;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.signin-subtext {
+    color: #6c757d;
+    font-size: 13px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+/* Form Fields */
+.login-form label {
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.login-form .input-group {
+    margin-bottom: 20px;
+}
+
+.login-form .form-control {
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.login-form .form-control:focus {
+    box-shadow: none;
+    border-color: #f6821f;
+}
+
+.password-toggle {
+    background: transparent;
+    border-left: none;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+/* Sign In Button */
+.btn-signin {
+    background-color: #ff9933;
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-signin:hover {
+    background-color: #f6821f;
+}
+
+/* Footer Section inside Card */
+.login-footer {
+    background-color: #fff8f2;
+    margin: 25px -25px -30px -25px; /* Pull to edges */
+    padding: 15px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-size: 11px;
+    color: #555;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.footer-highlight {
+    color: #f6821f;
+}
