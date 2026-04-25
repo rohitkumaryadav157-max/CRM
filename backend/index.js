@@ -10,6 +10,7 @@ const assignRouter = require('./Routes/assignRouter');
 const followupRoute = require('./Routes/followupModel');
 const app = express();
 
+//for dotenv file 
 const dotenv = require('dotenv');
 dotenv.config();
 const port = process.env.PORT;
@@ -23,9 +24,6 @@ mongoose.connect(process.env.MONGODB_URI)
 
 
 // MongoDB Connection
-mongoose.connect('mongodb://127.0.0.1:27017/crm')
-.then(()=>console.log("DB connect success"))
-.catch((err)=>console.log(`Error: ${err}`));
 
 
 // Middleware
