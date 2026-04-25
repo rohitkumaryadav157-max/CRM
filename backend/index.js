@@ -9,10 +9,17 @@ const visitorRouter = require('./Routes/visitorRouter');
 const assignRouter = require('./Routes/assignRouter');
 const followupRoute = require('./Routes/followupModel');
 const app = express();
-const port = 3000;
-const otpRouter = require('./Routes/otpRouter');
-const dotenv = require('dotenv');
 
+const dotenv = require('dotenv');
+dotenv.config();
+const port = process.env.PORT;
+mongoose.connect(process.env.MONGODB_URI)
+.then(()=>{
+    console.log("DB Connect ");
+})
+.catch((e)=>{
+    console.log(`Error :${e}`);
+})
 
 
 // MongoDB Connection
